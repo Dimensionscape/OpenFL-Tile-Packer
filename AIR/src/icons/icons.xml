@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:ab8f4da2cf18bc57b897b09c855c0943:0af4eb8d5e52383fba57b0979d5ac4ec:90a68ccae83e65ad8ceeb861f0a8529d$ -->
+<TextureAtlas imagePath="icons.png" width="54" height="32">
+    <SubTexture name="16x16c" x="37" y="16" width="15" height="15" frameX="0" frameY="0" frameWidth="16" frameHeight="16"/>
+    <SubTexture name="folder" x="37" y="1" width="16" height="13" frameX="0" frameY="-2" frameWidth="16" frameHeight="16"/>
+    <SubTexture name="photo_add" x="1" y="1" width="16" height="16"/>
+    <SubTexture name="photo_delete" x="19" y="1" width="16" height="16"/>
+</TextureAtlas>
