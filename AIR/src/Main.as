@@ -204,6 +204,7 @@
 			} else {
 				var tiles: Array = ArrayCollection(__tileList.dataProvider).arrayData;
 				var data: Object = new Object();
+				data.numTiles = __imageCollection.length;
 				for (var i: int = 0; i < __tileList.dataProvider.length; i++) {
 					var tileData: Object = tiles[i];
 					var dataObject: Object = data[i.toString()] = new Object();
