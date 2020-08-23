@@ -40,10 +40,10 @@ class TileAtlas
 	private function __populateRectangles(tileset:Tileset):Void
 	{
 		var i:Int = 0;
-		for (n in Reflect.fields(__data)){
+		for (i in 0...__data.numTiles)
+		{
 			var tileObj:Object = __data['$i'];
-			__tilesetMap.set(tileObj.name, tileset.addRect(tileObj.rect));
-			i++;			
+			__tilesetMap.set(tileObj.name, tileset.addRect(tileObj.rect));						
 		}		
 	}
 	
