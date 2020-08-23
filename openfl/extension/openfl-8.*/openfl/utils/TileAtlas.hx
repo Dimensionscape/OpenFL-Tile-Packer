@@ -39,7 +39,6 @@ class TileAtlas
 	
 	private function __populateRectangles(tileset:Tileset):Void
 	{
-		var i:Int = 0;
 		for (i in 0...__data.numTiles)
 		{
 			var tileObj:Object = __data['$i'];
