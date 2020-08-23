@@ -167,7 +167,7 @@
 			projectData.directory = __projectSaveDirectory;
 			projectData.imagePath = __imageFieldInput.text;
 			projectData.dataPath = __dataFieldInput.text;
-			projectData.filename = __filename;
+			projectData.filename = __filename = file.name;
 			projectData.tiles = [];
 			var tileArray: Array = ArrayCollection(__tileList.dataProvider).arrayData;
 			for (var i: int = 0; i < tileArray.length; i++) {
@@ -191,8 +191,7 @@
 					__maxSizePicker.selectedIndex = 3;
 					break;
 			}
-			__projectSaveDirectory = file.nativePath;
-			__filename = file.name;
+			__projectSaveDirectory = file.nativePath;			
 			__updateTitle();
 			FileUtils.writeProjectFile(projectData, file.nativePath);
 		}
