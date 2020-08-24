@@ -675,8 +675,7 @@
 			__exportButton.isEnabled = (__imageCollection.length > 0);
 		}
 
-		private function __orderRectangles(): void {
-			__bounds.width = __boundsIncrement;
+		private function __orderRectangles(): void {			
 			__imageCollection.sortOn("height", Array.NUMERIC);
 			__imageCollection.reverse();
 			var _y: int = 0;
@@ -706,6 +705,7 @@
 				__imageCollection[i].y = _y;
 			}
 			__updateTitle();
+			__bounds.width = __boundsIncrement;
 		}
 
 	}
