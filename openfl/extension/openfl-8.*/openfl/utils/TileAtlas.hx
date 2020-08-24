@@ -51,4 +51,12 @@ class TileAtlas
 		return tile;
 	}
 	
+	public function getRect(name:String):Rectangle{
+		return __tileset.getRect(__tilesetMap.get(name));
+	}
+	
+	public function getRectID(name:String):Int{
+		return __tilesetMap.get(name);
+	}
+	
 }
