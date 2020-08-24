@@ -7,14 +7,13 @@ import openfl.display.Tileset;
 import openfl.utils.Object;
 
 /**
-The TileAtlas class allows you to import packaged tilesheets into 
-Tileset using the TileAtlas data format. 
+The TileAtlas class allows you to parse packaged tilesheets for Tileset
+and retreive tiles by a key defined in the data file.
 
 The `TileAtlas()` constructor creates a new TileAtlas object that
-maps verbose identifiers to Tileset rectangles and provides a 
-BitmapData reference for Tileset. Use the `Tileset.fromTileAtlas()`
-method to intantiate a new Tileset from TileAtlas after the 
-TileAtlas object is created.
+maps string keys and rectangle references for a new Tileset object.
+Once the TileAtlas object is created, use the `getTile()` method
+to create and return a new tile by a string key.
  **/
 #if !openfl_debug
 @:fileXml('tags="haxe,release"')
